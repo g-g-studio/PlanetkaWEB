@@ -1,2 +1,81 @@
-body{
+:root{
+    --light-color: #EFEEEA;
+    --dark-grey: #676665;
+    --light-grey: #8E8D8A;
+    --main-color: #E85A4F;
 }
+
+body{
+    margin: 0px;
+    background-color: #BADA55;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.left{
+    float: left;
+    background-color: aqua;
+}
+
+.menu {
+    background-color: transparent;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .menu a {
+    float: right;
+    display: block;
+    color: var(--light-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .menu a:hover {
+    color: var(--main-color);
+  }
+  
+  /* Add an active class to highlight the current page */
+  /* .menu a.active {
+    background-color: #4CAF50;
+    color: white;
+  } */
+  
+  /* Hide the link that should open and close the menu on small screens */
+  .menu .icon {
+    display: none;
+  }
+
+
+
+  @media screen and (max-width: 600px) {
+    .menu a:not(:first-child) {display: none;}
+    .menu a.icon {
+      float: right;
+      display: block;
+    }
+    /* .left{
+        display: block;
+    } */
+  }
+  
+  @media screen and (max-width: 600px) {
+    .menu.responsive {position: relative;}
+    .menu.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .left{
+        width: 100%;
+    }
+    .menu.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .left{
+        width: 100%;
+    }
+  }
