@@ -42,6 +42,7 @@ body {
 }
 .title{
   font-size: 5rem;
+  font-weight: bolder !important;
 }
 .lead a{
   text-decoration: none;
