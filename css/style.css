@@ -348,7 +348,7 @@ footer-logo{
   transition: 1s ease-out;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
+/* MEDIA QUERIES */
 
 @media (max-width: 880px) {
 
@@ -369,6 +369,9 @@ footer-logo{
   }
   #footer-company-name-small{
     display: unset;
+  }
+  .title{
+    font-size: 5rem;
   }
 }
 

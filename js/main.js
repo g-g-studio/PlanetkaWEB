@@ -11,4 +11,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => { //Vyberie vsetky h
       });
   });
 });
-
