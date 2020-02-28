@@ -1,8 +1,7 @@
-function openHamburger() {
-    let menu = document.getElementById("myTopnav");
-    if (menu.className === "menu") {
-      menu.className += " responsive";
-    } else {
-      menu.className = "menu";
-    }
-  }
+import MoveTo from "moveto";
+
+document.addEventListener('DOMContentLoaded', function(){ 
+  const moveTo = new MoveTo();
+  const target = document.getElementByClassName('sectionII');
+  moveTo.move(target);
+});
