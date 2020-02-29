@@ -6,7 +6,9 @@
   --lighter-color: #EFEEEA;
 
 }
-
+ html{
+   scroll-behavior: smooth;
+ }
 .sekciaI {
   background:
     url('https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?cs=srgb&dl=chair-cutlery-diner-dining-941861.jpg&fm=jpg') no-repeat center center fixed;
@@ -170,3 +172,206 @@
     padding: 0 50px;
   }
 }
+
+
+
+ /* FOOTER */
+
+.footer-distributed{
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  padding: 55px;
+  margin-top: 80px;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+footer-logo{
+  color: var(--secondary-color);
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  var(--primary-color);
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  var(--secondary-color);
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  var(--primary-color);
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+.footer-distributed .footer-links a:hover{
+  color: var(--secondary-color);
+  transition: 0.5s ease;
+}
+
+.footer-distributed .footer-company-name{
+	color:  var(--text-color);
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: var(--primary-color);
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: var(--primary-color);
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  var(--secondary-color);
+	text-decoration: none;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: var(--primary-color);
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+.footer-distributed .footer-icons a:hover{
+  color: var(--secondary-color);
+  transition:  0.5s ease;
+
+}
+
+#footer-company-name-small{
+  display: none;
+}
+
+#gng-studio{
+  color: var(--secondary-color);
+}
+
+#gng-studio:hover{
+  color: var(--text-color);
+  transition: 1s ease-out;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+  }
+  #footer-company-name-big{
+    display: none;
+  }
+  #footer-company-name-small{
+    display: unset;
+  }
+  .title{
+    font-size: 5rem;
+  }
+}
+

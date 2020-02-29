@@ -12,7 +12,7 @@
 <body>
 
   <!--SEKCIA I-->
-  <section class="sekciaI">
+  <section class="sekciaI" id='sectionI'>
     <!-- NAVIGATION MENU -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
       <a class="navbar-brand" href="#">Planéta Levoča</a>
@@ -22,7 +22,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">O nás</a>
+            <a class="nav-link" href="#sectionII">O nás</a>
           </li>
           <li class="nav-item text-blue">
             <a class="nav-link" href="#">Menu</a>
@@ -43,7 +43,7 @@
         <div class="row h-100 align-items-center">
           <div class="col-12 text-left">
           <h1 class="title">Vitajte u nás</h1> <br>
-            <p class="lead"><a href="#" onclick="moveTo()">MENU</a></p>
+            <p class="lead"><a href="#sectionIV">MENU</a></p>
           </div>
         </div>
       </div>
@@ -52,7 +52,7 @@
     
 
     <!-- SEKCIA II -->
-    <section class="sectionII">
+    <section class="sectionII" id='sectionII'>
       <img src="https://images.pexels.com/photos/3172740/pexels-photo-3172740.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
       <div class="right">
         <h4>Planéta Levoča</h4>
@@ -77,7 +77,7 @@
     </section>
 
     <!-- SEKCIA IV -->
-    <section class="sectionIV">
+    <section class="sectionIV" id='sectionIV'>
       <div class='left'>
         <h4>Planéta Levoča</h4>
         <h2>O nás</h2>
@@ -90,7 +90,47 @@
       </div>
       <img src="https://images.pexels.com/photos/3172740/pexels-photo-3172740.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
     </section>
-    
+  
+
+
+    <!-- FOOTER -->
+    <footer class="footer-distributed">
+			<div class="footer-left">
+				<h3><span id='footer-logo'>Planéta</span> Levoča</h3>
+				<p class="footer-links">
+					<a href="#sectionI">Domov</a>
+					·
+					<a href="#sectionII">O nás</a>
+					·
+					<a href="#">Menu</a>
+					·
+					<a href="#">Fotogaléria</a>
+					·
+					<a href="#">Rekordy</a>
+				</p>
+				<p class="footer-company-name big" id='footer-company-name-big'><span id='gng-studio'>G&G Studio</span> &copy; 2020</p>
+			</div>
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Námestie Majstra Pavla 38</span>05401 Levoca</p>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>053/451 21 00
+          </p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<div class="footer-icons">
+					<a href="https://www.facebook.com/cateringlevoca/" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a target="_blank" href="https://www.google.sk/maps/place/N%C3%A1mestie+Majstra+Pavla+38%2F38,+054+01+Levo%C4%8Da/@49.0249435,20.5869995,18.05z/data=!4m5!3m4!1s0x473e466000c81e63:0x3414cf199adbd7f7!8m2!3d49.0248952!4d20.587788"><i class="fa fa-map-marker"></i></a>
+					<a href="email@email.sk" target="_blank"><i class="fa fa-envelope"></i></a>
+					<a href="www.gng-studio.sk" target="_blank"><i class="fa fa-desktop"></i></a>
+        </div>
+        <p class="footer-company-name" id='footer-company-name-small'><span id='gng-studio'>G&G Studio</span> &copy; 2020</p>
+			</div>
+		</footer>
 
 </body>
 <script src="/js/main.js"></script>
