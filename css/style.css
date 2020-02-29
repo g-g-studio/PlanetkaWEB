@@ -9,6 +9,8 @@
  html{
    scroll-behavior: smooth;
  }
+
+ /* SEKCIA I */
 .sekciaI {
   background:
     url('https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?cs=srgb&dl=chair-cutlery-diner-dining-941861.jpg&fm=jpg') no-repeat center center fixed;
@@ -64,11 +66,13 @@
   transition: 0.5s ease-in;
 }
 
+/* SEKCIA II */
 .sectionII {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   background-color: var(--lighter-color);
+  padding-bottom: 100px;
 }
 
 .sectionII h2 {
@@ -100,6 +104,102 @@
   margin-right: auto;
 }
 
+/* SEKCIA III - PORTFOLIO*/
+.sekciaIII {
+  background-color: var(--lighter-color);
+}
+
+.sekciaIII h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--secondary-color);
+  padding-bottom: 20px;
+  text-align: center;
+ }
+
+ .sekciaIII h4 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: var(--text-color);
+  padding-bottom: 10px;
+  text-align: center;
+ }
+
+.portfolio {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-gap: 10px;
+  height: 1000px;
+}
+
+.portfolio div:nth-child(odd) {
+  background-color: #25a0d9;
+  padding: 50px;
+}
+
+.portfolio div:nth-child(even) {
+  background-color: #124861;
+  padding: 50px;
+}
+
+.one {
+  grid-column: 1/3;
+  grid-row: 1/5;
+  background-image: url('https://images.pexels.com/photos/3772771/pexels-photo-3772771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.two {
+  grid-column: 1/5;
+  grid-row: 5/8;
+  background-image: url('https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.three {
+  grid-column: 3/5;
+  grid-row: 1/5;
+  background-image: url('https://images.pexels.com/photos/3747468/pexels-photo-3747468.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.four {
+  grid-column: 1/5;
+  grid-row: 8/10;
+  background-image: url('https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.five {
+  grid-column: 1/4;
+  grid-row: 10/13;
+  background-image: url('https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.six {
+  grid-column: 4/5;
+  grid-row: 10/13;
+  background-image: url('https://images.pexels.com/photos/3772771/pexels-photo-3772771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* SEKCIA IV */
 .sectionIV {
   display: flex;
   justify-content: space-around;
@@ -140,10 +240,12 @@
 
 
 @media(min-width: 900px) {
+  /*SEKCIA II*/
   .sectionII {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 100px 0;
   }
 
   .sectionII img {
@@ -156,10 +258,50 @@
     padding: 0 50px;
   }
 
+  /*SEKCIA III*/
+  .portfolio {
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 98%;
+    height: 80vh;
+  }
+
+  .one {
+    grid-column: 1/4;
+    grid-row: 1/6;
+  }
+
+  .two {
+    grid-column: 4/13;
+    grid-row: 1/4;
+  }
+
+  .three {
+    grid-column: 13/15;
+    grid-row: 1/6;
+  }
+
+  .four {
+    grid-column: 4/12;
+    grid-row: 4/5;
+  }
+
+  .five {
+    grid-column: 4/12;
+    grid-row: 5/6;
+  }
+
+  .six {
+    grid-column: 12/13; 
+    grid-row: 4/6;
+  }
+
+  /*SEKCIA IV*/
   .sectionIV {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 100px 0;
   }
 
   .sectionIV img {
@@ -360,6 +502,17 @@ footer-logo{
 		margin-bottom: 40px;
 		text-align: center;
 	}
+
+  .footer-distributed {
+    position: relative;
+  }
+
+  .footer-company-name {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3%;
+  }*/
 
 	.footer-distributed .footer-center i{
 		margin-left: 0;
