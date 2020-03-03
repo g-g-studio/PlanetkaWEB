@@ -316,7 +316,9 @@
 }
 
 
-
+.obsah h1{
+  font-weight: bold;
+}
 
 .Vcontainer img{
   width: 100%;
